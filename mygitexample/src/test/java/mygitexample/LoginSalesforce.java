@@ -2,10 +2,12 @@ package mygitexample;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class LoginSalesforce {
 
-	public static void main(String[] args) throws Exception 
+	@Test
+	public void launchBrowser () throws Exception
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\PracticeWorkSpace\\mygitexample\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
